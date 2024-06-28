@@ -17,17 +17,6 @@ const winPattern = [
   [6, 7, 8],
 ];
 
-// RESET FUNCTIONALITY
-
-const resetGame = () => {
-  turnO = true;
-  enableBoxes();
-  msgContainer.classList.add("hide");
-};
-
-newGameBtn.addEventListener("click", resetGame);
-resetBtn.addEventListener("click", resetGame);
-
 // MAIN LOGIC
 
 boxes.forEach((box) => {
@@ -84,3 +73,14 @@ const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
+
+// RESET FUNCTIONALITY
+
+const resetGame = () => {
+  turnO = true;
+  enableBoxes();
+  msgContainer.classList.add("hide");
+};
+
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
